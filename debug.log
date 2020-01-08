@@ -24,3 +24,25 @@
 2020-01-08 17:22:31 INFO ? routes.user.insertUser : user account created succesfully
 2020-01-08 17:22:52 INFO ? POST: /signin : was called
 2020-01-08 17:22:52 INFO ? routes.user.selectUserByEmailPw : user n° 1 succesfully signed in
+2020-01-08 18:46:25 INFO ? POST: /signin : was called
+2020-01-08 18:46:25 INFO ? routes.user.selectUserByEmailPw : user n° 2 succesfully signed in
+2020-01-08 18:46:25 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 2
+2020-01-08 18:46:25 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 18:46:25 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 2
+2020-01-08 18:46:25 INFO ? routes.user.selectShopsNearMe : called by user n° 2
+2020-01-08 18:46:25 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 2
+2020-01-08 18:46:34 INFO ? GET: /signout : called by user n° 2
+2020-01-08 18:46:34 INFO ? routes.user.signout : signing out user n° 2
+2020-01-08 18:46:34 INFO ? routes.user.signout : user n° 2 signout succesfully
+2020-01-08 18:46:53 INFO ? POST: /signup : was called
+2020-01-08 18:46:53 INFO ? routes.user.insertUser : user account created succesfully
+2020-01-08 18:46:57 INFO ? POST: /signin : was called
+2020-01-08 18:46:57 INFO ? routes.user.selectUserByEmailPw : user n° 3 succesfully signed in
+2020-01-08 18:46:57 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 3
+2020-01-08 18:46:57 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 18:46:57 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 3
+2020-01-08 18:46:57 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 18:46:57 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 18:47:03 INFO ? GET: /signout : called by user n° 3
+2020-01-08 18:47:03 INFO ? routes.user.signout : signing out user n° 3
+2020-01-08 18:47:03 INFO ? routes.user.signout : user n° 3 signout succesfully
