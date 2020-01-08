@@ -5,7 +5,8 @@ function db_tables(tables){
 
 const db_shops = new db_tables({
 	user: "user",
-	shops: "shops"
+	shops: "shops",
+	shops_liked: "liked_shops"
 });
 
 exports.get = {
@@ -15,5 +16,8 @@ exports.get = {
 								+"SQRT( POW(69.1 * (latitude - ?), 2) + "
 								+"POW(69.1 * (? - longitude) * COS(latitude / 57.3), 2)) * 1609.34 AS distance "
 							+"FROM `" + db_shops.tables.shops + "` "
-							+"HAVING distance < 1000 ORDER BY distance;"
+							+"WHERE id not in "
+								+"(SELECT `shop_id` FROM `" + db_shops.tables.shops_liked + "` WHERE `user_id` = ?)"
+							+"HAVING distance < 1000 ORDER BY distance;",
+	SQL_INSERT_LIKED_SHOP_BY_USER: "INSERT INTO `" + db_shops.tables.shops_liked + "`(`shop_id`, `user_id`) VALUES(?, ?);"
 };
