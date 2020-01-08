@@ -10,11 +10,14 @@ function init() {
 			new_email:"",
 			new_password:"",
 			dashbord: "Welcome",
+			is_near_by_shop: true,
 			signup_url: "/signup",
 			signin_url: "/signin",
 			signout_url: "/signout",
 			like_shop_url: "/shop/like",
 			dislike_shop_url: "/shop/dislike",
+			near_by_shops_url: "/shops/nearby",
+			prefered_shops_url: "/shops/prefered",
 			shops: [{
 				"id": 0,
 				"name": "shop0",
@@ -43,6 +46,7 @@ function init() {
 				$("#dashbord-box").hide();
 				$("#sign-up-box").hide();
 				$("#sign-in-box").show();
+				this.is_near_by_shop = true;
 			},
 			removeShopDisplay(id){
 				for (var i = 0; i < this.shops.length; i++) {
@@ -136,6 +140,36 @@ function init() {
 					this.removeShopDisplay(shop_id);
 					this.displayMessage(response.message, response.error);
 				});
+			},
+			nearByShops(){
+				if(!this.is_near_by_shop){
+					fetch(this.near_by_shops_url, {method:"GET"}).then(response => {
+						return response.json();
+					}).then(response => {
+						this.displayMessage(response.message, response.error);
+						if(!response.error){
+							this.shops = response.data.shops;
+							$("#btn-near-by-shops").css("cursor", "not-allowed");
+							$("#btn-preferd-shops").css("cursor", "pointer");
+							this.is_near_by_shop = true;
+						}
+					});
+				}
+			},
+			preferedShops(){
+				if(this.is_near_by_shop){
+					fetch(this.prefered_shops_url, {method:"GET"}).then(response => {
+						return response.json();
+					}).then(response => {
+						this.displayMessage(response.message, response.error);
+						if(!response.error){
+							this.shops = response.data.shops;
+							$("#btn-near-by-shops").css("cursor", "pointer");
+							$("#btn-preferd-shops").css("cursor", "not-allowed");
+							this.is_near_by_shop = false;
+						}
+					});
+				}
 			}
 		}
 	});
