@@ -11,6 +11,7 @@ var express = require('express')
 	,util = require('util')
 	,mysql = require('mysql')
 	,user = require('./app_modules/user-functionalities')
+	,shop = require('./app_modules/shop-functionalities')
 	,multerData = multer()
 	,app = express()
 	,connection = mysql.createConnection({
@@ -70,4 +71,12 @@ app.get('/signout', multerData.fields([]), async(request, response) =>{
 		"called by user n° " + request.session.user.id
 	);
 	await user.signout(request, response);
+});
+
+app.post('/shop/like', multerData.fields([]), async(request, response) =>{
+	file_log(
+		"POST: /shop/like",
+		"called by user n° " + request.session.user.id
+	);
+	await shop.likeShop(request, response);
 });
