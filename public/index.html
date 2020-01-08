@@ -10,9 +10,54 @@
 	<script type="text/javascript" src="lib/js/vue-material.min.js"></script>
 
 	<script type="text/javascript" src="js/main-vue.js"></script>
+	<link rel="stylesheet" href="css/main-style.css">
 </head>
 
 <body>
+
+<div class="container col-sm-12" id="main">
+	<!-- message aria -->
+	<div>
+		<div class="error-msg alert alert-danger col-sm-12"></div>
+		<div class="success-msg alert alert-success col-sm-12"></div>
+	</div>
+
+
+	<!-- signup-form -->
+	<div id="sign-up-box" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<div class="panel-title">Sign Up</div>
+			</div> 
+			<div class="panel-body" >
+				<form class="form-horizontal" role="form"  v-on:submit.prevent="signup()">
+					<div class="form-group">
+						<label for="new_email" class="col-md-3 control-label">Email</label>
+						<div class="col-md-9">
+						<input type="text" class="form-control" v-model="new_email" name="new_email" placeholder="New email">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="new_password" class="col-md-3 control-label">Password</label>
+						<div class="col-md-9">
+							<input type="password" class="form-control" v-model="new_password" name="new_password" placeholder="New password">
+						</div>
+					</div>
+					<div class="form-group">
+						<!-- Button -->
+						<div class="col-md-offset-3 col-md-9">
+							<button id="btn-signup" type="submit" class="btn btn-info">
+								<i class="icon-hand-right"></i> &nbsp Sign Up
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</div>
 	
 </body>
 </html>
