@@ -120,7 +120,7 @@ function deleteDislikedShopAddedTwoHourAgo(user_id){
 	var callee_name = arguments.callee.name;
 	file_log("routes.user." + callee_name, "called by user " + user_id);
 	file_log("routes.user." + callee_name, "reseting disliked shops if inserted before 2hour from now");
-	db.query(queries.get.SQL_DELETE_DISLIKED_SHOP_ADDED_TWO_HOUR_AGO,
+	db.query(queries.get.SQL_DELETE_DISLIKED_SHOP_ADDED_TWO_HOURS_AGO,
 	function(error, results){
 		if(error)
 			throw error;
@@ -130,6 +130,53 @@ function deleteDislikedShopAddedTwoHourAgo(user_id){
 		}
 	}); 
 }
+function selectShopsNearMe(user, response){
+	var callee_name = arguments.callee.name;
+	file_log("routes.user." + callee_name, "called by user n° " + user.id);
+	db.query(queries.get.SQL_SELECT_SHOPS_NEAR_ME,
+		[
+			user.location.latitude,
+			user.location.longitude,
+			user.id,
+			user.id
+		],
+		function(error, results){
+			if(error) throw error;
+			file_log("routes.user." + callee_name, "succesfully loaded near by shops for user n° " + user.id);
+
+			response.send(JSON.stringify({
+				error: false,
+				data: {
+					user: user,
+					shops: results
+				},
+				message: "succesfully loaded data!"
+			}));
+		});
+}
+function selectPreferedShops(user, response){
+	var callee_name = arguments.callee.name;
+	file_log("routes.user." + callee_name, "called by user n° " + user.id);
+	db.query(queries.get.SQL_SELECT_PREFERED_SHOPS,
+		[
+			user.location.latitude,
+			user.location.longitude,
+			user.id
+		],
+	function(error, results){
+		if(error) throw error;
+		file_log("routes.user." + callee_name, "succesfully loaded prefered shops for user n° " + user.id);
+
+		response.send(JSON.stringify({
+			error: false,
+			data: {
+				user: user,
+				shops: results
+			},
+			message: "succesfully loaded data!"
+		}));
+	});
+}
 exports.insertUser = insertUser;
 exports.requestCurrentLocationFromUser = requestCurrentLocationFromUser;
 exports.selectShopsNearMe = selectShopsNearMe;
@@ -137,3 +184,4 @@ exports.selectUserByEmailPw = selectUserByEmailPw;
 exports.insertLikedShopByUser = insertLikedShopByUser;
 exports.insertDislikedShopByUser = insertDislikedShopByUser;
 exports.deleteDislikedShopAddedTwoHourAgo = deleteDislikedShopAddedTwoHourAgo;
+exports.selectPreferedShops = selectPreferedShops;
