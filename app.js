@@ -57,3 +57,10 @@ app.post('/signup', multerData.fields([]), async(request, response) =>{
 	);
 	await user.signup(request, response);
 });
+app.post('/signin', multerData.fields([]), async(request, response) =>{
+	file_log(
+		"POST: /signin",
+		"was called"
+	);
+	await user.signin(request, response);
+});
