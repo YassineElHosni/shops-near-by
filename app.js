@@ -87,3 +87,17 @@ app.post('/shop/dislike', multerData.fields([]), async(request, response) =>{
 	);
 	await shop.dislikeShop(request, response);
 });
+app.get('/shops/nearby', async(request, response) =>{
+	file_log(
+		"GET: /shops/nearby",
+		"called by user n° " + request.session.user.id
+	);
+	await shop.nearByShops(request, response);
+});
+app.get('/shops/prefered', async(request, response) =>{
+	file_log(
+		"GET: /shop/prefered",
+		"called by user n° " + request.session.user.id
+	);
+	await shop.preferedShops(request, response);
+});
