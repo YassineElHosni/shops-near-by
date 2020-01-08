@@ -61,5 +61,19 @@ INSERT INTO `shops` (`name`, `image`, `longitude`, `latitude`) VALUES
 ('EJ medic', '', '-6.847629', '34.004175'),
 ('Learning Design', '', '-6.847473', '34.004272');
 
+--
+-- Table structure for table `liked_shops`
+--
+
+CREATE TABLE if not exists `liked_shops` (
+  `id` int(11) PRIMARY KEY AUTO_INCREMENT,
+  `shop_id` int,
+  `user_id` int,
+  CONSTRAINT `liked_shops_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`),
+  CONSTRAINT `liked_shops_ibfk_2` FOREIGN KEY (`shop_id`) REFERENCES `shops` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `liked_shops` AUTO_INCREMENT=1000;
+
 
 COMMIT;
