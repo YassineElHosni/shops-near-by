@@ -19,4 +19,36 @@ function insertUser(user, response){
 		}));
 	});
 }
+function selectUserByEmailPw(user, request, response){
+   var callee_name = arguments.callee.name;
+   db.query(queries.get.SQL_SELECT_USER_BY_EMAIL_PW,
+      [
+         user.email,
+         user.password
+      ],
+      function(error, results){
+         if(error) throw error;
+         if(results.length == 1){
+            user.copyUser(results[0]);
+            request.session.user = user.toRequiredObject();
+
+            file_log("routes.user." + callee_name, "user n° " + user.id + " succesfully signed in");
+
+            response.send(JSON.stringify({
+               error: false,
+               message: "Succesfully signed in!"
+            }));
+
+         }
+         else{
+            file_log("routes.user." + callee_name, "Wrong Credentials", "ERROR");
+            response.send(JSON.stringify({
+               error: true,
+               message: "Wrong credentials!"
+            }));
+         }
+                 
+      });
+}
 exports.insertUser = insertUser;
+exports.selectUserByEmailPw = selectUserByEmailPw;
