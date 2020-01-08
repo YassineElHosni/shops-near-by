@@ -114,6 +114,13 @@
 					<div class="caption">
 						<!-- <p>({{ shop.id }})</p> -->
 						<p>{{ parseInt(shop.distance) }} metres</p>
+						<p>
+							<input type="button"
+								class="btn btn-success" 
+								name="btn-like-shop"
+								v-on:click.prevent="likeShop(shop.id)"
+								value="like">
+						</p>
 					</div>
 				</div>
 			</div>
