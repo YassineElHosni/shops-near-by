@@ -1,4 +1,4 @@
-## The near by shops repository
+### The near by shops repository
 A full stack javascript project to lists shops nearby a given user.
 
 # Description
@@ -32,7 +32,7 @@ cd shops-near-by
 npm install
 ```
 
-Create a new database with the name 'db_shops' & Importe the following SQL code
+Importe the following SQL code
 
 ```bash
 https://github.com/YassineElHosni/shops-near-by/blob/master/data-base-script.sql
@@ -47,11 +47,10 @@ Open [http://localhost:9096](http://localhost:9096) and take a look around.
 
 ## List of implemented functionalities
 
-
+* As a User, I can sign up using my email & password
 
 ## List of yet to be implemented functionalites
 
-* As a User, I can sign up using my email & password
 * As a User, I can sign in using my email & password
 * As a User, I can display the list of shops sorted by distance
 * As a User, I can like a shop, so it can be added to my preferred shops
