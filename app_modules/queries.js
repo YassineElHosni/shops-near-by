@@ -23,6 +23,12 @@ exports.get = {
 							+"HAVING distance < 1000 ORDER BY distance;",
 	SQL_INSERT_LIKED_SHOP_BY_USER: "INSERT INTO `" + db_shops.tables.shops_liked + "`(`shop_id`, `user_id`) VALUES(?, ?);",
 	SQL_INSERT_DISLIKED_SHOP_BY_USER: "INSERT INTO `" + db_shops.tables.shops_disliked + "`(`shop_id`, `user_id`) VALUES(?, ?);",
-	SQL_DELETE_DISLIKED_SHOP_ADDED_TWO_HOUR_AGO: "DELETE FROM `" + db_shops.tables.shops_disliked + "` "
-		+"WHERE time_format(timediff(CURRENT_TIMESTAMP, dislike_date),'%H') >= 2;"
+	SQL_DELETE_DISLIKED_SHOP_ADDED_TWO_HOURS_AGO: "DELETE FROM `" + db_shops.tables.shops_disliked + "` "
+		+"WHERE time_format(timediff(CURRENT_TIMESTAMP, dislike_date),'%H') >= 2;",
+	SQL_SELECT_PREFERED_SHOPS: "SELECT id, name, latitude, longitude, "
+								+"SQRT( POW(69.1 * (latitude - ?), 2) + "
+								+"POW(69.1 * (? - longitude) * COS(latitude / 57.3), 2)) * 1609.34 AS distance "
+							+"FROM `" + db_shops.tables.shops + "` "
+							+"WHERE id in "
+								+"(SELECT `shop_id` FROM `" + db_shops.tables.shops_liked + "` WHERE `user_id` = ?);"
 };
