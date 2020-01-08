@@ -80,7 +80,25 @@ function selectUserByEmailPw(user, request, response){
 		}
 	});
 }
+function insertLikedShopByUser(shop_id, user_id, response){
+	var callee_name = arguments.callee.name;
+	file_log("routes.user." + callee_name, "called by user n° " + user_id);
+	db.query(queries.get.SQL_INSERT_LIKED_SHOP_BY_USER,
+		[
+			shop_id,
+			user_id
+		],
+	function(error, result) {
+		if(error) throw error;
+		file_log("routes.user." + callee_name, "user n° " + user_id + " succesfully liked shop n° " + shop_id);
+		response.send(JSON.stringify({
+			error: false,
+			message: "Succesfully liked the given shop!"
+		}));
+	});
+}
 exports.insertUser = insertUser;
 exports.requestCurrentLocationFromUser = requestCurrentLocationFromUser;
 exports.selectShopsNearMe = selectShopsNearMe;
 exports.selectUserByEmailPw = selectUserByEmailPw;
+exports.insertLikedShopByUser = insertLikedShopByUser;
