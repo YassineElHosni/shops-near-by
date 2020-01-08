@@ -46,3 +46,56 @@
 2020-01-08 18:47:03 INFO ? GET: /signout : called by user n° 3
 2020-01-08 18:47:03 INFO ? routes.user.signout : signing out user n° 3
 2020-01-08 18:47:03 INFO ? routes.user.signout : user n° 3 signout succesfully
+2020-01-08 19:39:23 INFO ? POST: /signin : was called
+2020-01-08 19:39:23 INFO ? routes.user.selectUserByEmailPw : user n° 3 succesfully signed in
+2020-01-08 19:39:23 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 3
+2020-01-08 19:39:23 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 19:39:23 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 3
+2020-01-08 19:39:23 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 19:39:58 INFO ? POST: /signin : was called
+2020-01-08 19:39:58 INFO ? routes.user.selectUserByEmailPw : user n° 3 succesfully signed in
+2020-01-08 19:39:58 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 3
+2020-01-08 19:39:58 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 19:39:58 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 3
+2020-01-08 19:39:58 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 20:16:15 INFO ? POST: /signin : was called
+2020-01-08 20:16:15 INFO ? routes.user.selectUserByEmailPw : user n° 3 succesfully signed in
+2020-01-08 20:16:15 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 3
+2020-01-08 20:16:15 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 20:16:15 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 3
+2020-01-08 20:16:15 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 20:16:15 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 20:17:33 INFO ? POST: /signin : was called
+2020-01-08 20:17:33 INFO ? routes.user.selectUserByEmailPw : user n° 3 succesfully signed in
+2020-01-08 20:17:33 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 3
+2020-01-08 20:17:33 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 20:17:33 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 3
+2020-01-08 20:17:33 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 20:17:33 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 20:17:37 INFO ? POST: /shop/like : called by user n° 3
+2020-01-08 20:19:00 INFO ? POST: /signin : was called
+2020-01-08 20:19:00 INFO ? routes.user.selectUserByEmailPw : user n° 3 succesfully signed in
+2020-01-08 20:19:00 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 3
+2020-01-08 20:19:00 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 20:19:00 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 3
+2020-01-08 20:19:00 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 20:19:00 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 20:19:02 INFO ? POST: /shop/like : called by user n° 3
+2020-01-08 20:19:02 INFO ? routes.user.insertLikedShopByUser : called by user n° 3
+2020-01-08 20:19:02 INFO ? routes.user.insertLikedShopByUser : user n° 3 succesfully liked shop n° 1004
+2020-01-08 20:19:03 INFO ? POST: /shop/like : called by user n° 3
+2020-01-08 20:19:03 INFO ? routes.user.insertLikedShopByUser : called by user n° 3
+2020-01-08 20:19:03 INFO ? routes.user.insertLikedShopByUser : user n° 3 succesfully liked shop n° 1003
+2020-01-08 20:19:03 INFO ? POST: /shop/like : called by user n° 3
+2020-01-08 20:19:03 INFO ? routes.user.insertLikedShopByUser : called by user n° 3
+2020-01-08 20:19:03 INFO ? routes.user.insertLikedShopByUser : user n° 3 succesfully liked shop n° 1005
+2020-01-08 20:19:04 INFO ? POST: /shop/like : called by user n° 3
+2020-01-08 20:19:04 INFO ? routes.user.insertLikedShopByUser : called by user n° 3
+2020-01-08 20:19:04 INFO ? routes.user.insertLikedShopByUser : user n° 3 succesfully liked shop n° 1006
+2020-01-08 20:20:59 INFO ? POST: /signin : was called
+2020-01-08 20:20:59 INFO ? routes.user.selectUserByEmailPw : user n° 3 succesfully signed in
+2020-01-08 20:20:59 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 3
+2020-01-08 20:20:59 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 20:20:59 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 3
+2020-01-08 20:20:59 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 20:20:59 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
