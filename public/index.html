@@ -4,14 +4,15 @@
 	<meta name="viewport" content="initial-scale=1.0">
 	<meta charset="UTF-8">
 	
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
-    <!-- <link rel="stylesheet" href="lib/css/bootstrap.min.css"/> -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+	<!-- <link rel="stylesheet" href="lib/css/bootstrap.min.css"/> -->
 	<script type="text/javascript"  src="lib/js/jquery-2.2.0.min.js"></script>
 	<script type="text/javascript" src="lib/js/vue.js"></script>
 	<script type="text/javascript" src="lib/js/vue-material.min.js"></script>
 
 	<script type="text/javascript" src="js/main-vue.js"></script>
 	<link rel="stylesheet" href="css/main-style.css">
+	<link rel="stylesheet" href="css/dashbord-style.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
 		<div class="panel panel-info">
 			<div class="panel-heading">
 				<div class="panel-title">Sign Up</div>
-				<div style="float:right; font-size: 85%; position: relative; top:-10px">
+				<div class="section-header">
 					<a id="btn-signin-get" v-on:click.prevent="getSignin()">Sign In</a>
 				</div>
 			</div> 
@@ -91,6 +92,30 @@
 						</div>
 					</div>
 				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- dashbord -->
+	<div id="dashbord-box"  class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+		<div class="section-header">
+			<a id="btn-near-by-shops" href="#"><b>Near by Shops</b></a>
+			<a id="btn-signout" v-on:click.prevent="signout()"><b>Sign Out</b></a>
+		</div>
+		<div class="h1 text-warning">{{dashbord}}</div>
+		<div class="h5 subtitle">empty</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-4" v-for="shop in shops">
+				<div class="thumbnail">
+					<h5>
+						<b>{{ shop.name }}</b>
+					</h5>
+					<img src="img/default-img.jpg">
+					<div class="caption">
+						<!-- <p>({{ shop.id }})</p> -->
+						<p>{{ parseInt(shop.distance) }} metres</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
