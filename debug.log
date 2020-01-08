@@ -4,3 +4,23 @@
 2020-01-08 16:01:51 INFO ? POST: /signup : was called
 2020-01-08 16:03:08 INFO ? POST: /signup : was called
 2020-01-08 16:03:08 INFO ? routes.user.insertUser : user account created succesfully
+2020-01-08 17:09:07 INFO ? POST: /signin : was called
+2020-01-08 17:09:07 INFO ? routes.user.selectUserByEmailPw : user n° 0succesfully signed in
+2020-01-08 17:09:38 INFO ? POST: /signin : was called
+2020-01-08 17:09:38 ERROR ? routes.user.selectUserByEmailPw : Wrong Credentials
+2020-01-08 17:09:50 INFO ? POST: /signup : was called
+2020-01-08 17:09:50 INFO ? routes.user.insertUser : user account created succesfully
+2020-01-08 17:09:52 INFO ? POST: /signin : was called
+2020-01-08 17:09:52 INFO ? routes.user.selectUserByEmailPw : user n° 0succesfully signed in
+2020-01-08 17:19:25 INFO ? POST: /signin : was called
+2020-01-08 17:19:25 ERROR ? routes.user.selectUserByEmailPw : Wrong Credentials
+2020-01-08 17:19:29 INFO ? POST: /signin : was called
+2020-01-08 17:19:29 ERROR ? routes.user.selectUserByEmailPw : Wrong Credentials
+2020-01-08 17:20:02 INFO ? POST: /signin : was called
+2020-01-08 17:20:02 ERROR ? routes.user.selectUserByEmailPw : Wrong Credentials
+2020-01-08 17:22:24 INFO ? POST: /signin : was called
+2020-01-08 17:22:24 ERROR ? routes.user.selectUserByEmailPw : Wrong Credentials
+2020-01-08 17:22:31 INFO ? POST: /signup : was called
+2020-01-08 17:22:31 INFO ? routes.user.insertUser : user account created succesfully
+2020-01-08 17:22:52 INFO ? POST: /signin : was called
+2020-01-08 17:22:52 INFO ? routes.user.selectUserByEmailPw : user n° 1 succesfully signed in
