@@ -68,6 +68,8 @@ function selectUserByEmailPw(user, request, response){
 
 			user.location = requestCurrentLocationFromUser(user.id);
 
+			deleteDislikedShopAddedTwoHourAgo(user.id);
+
 			file_log("routes.user." + callee_name, "requesting shops near user n° " + user.id);
 			selectShopsNearMe(user, response);
 		}
@@ -97,8 +99,41 @@ function insertLikedShopByUser(shop_id, user_id, response){
 		}));
 	});
 }
+function insertDislikedShopByUser(shop_id, user_id, response){
+	var callee_name = arguments.callee.name;
+	file_log("routes.user." + callee_name, "called by user n° " + user_id);
+	db.query(queries.get.SQL_INSERT_DISLIKED_SHOP_BY_USER,
+		[
+			shop_id,
+			user_id
+		],
+	function(error, result) {
+		if(error) throw error;
+		file_log("routes.user." + callee_name, " user n° " + user_id + " succesfully disliked shop n° " + shop_id);
+		response.send(JSON.stringify({
+			error: false,
+			message: "Succesfully disliked the given shop!"
+		}));
+	});
+}
+function deleteDislikedShopAddedTwoHourAgo(user_id){
+	var callee_name = arguments.callee.name;
+	file_log("routes.user." + callee_name, "called by user " + user_id);
+	file_log("routes.user." + callee_name, "reseting disliked shops if inserted before 2hour from now");
+	db.query(queries.get.SQL_DELETE_DISLIKED_SHOP_ADDED_TWO_HOUR_AGO,
+	function(error, results){
+		if(error)
+			throw error;
+		else{
+			file_log("routes.user." + callee_name, "succesfully removed some disliked shops");
+			file_log(results);
+		}
+	}); 
+}
 exports.insertUser = insertUser;
 exports.requestCurrentLocationFromUser = requestCurrentLocationFromUser;
 exports.selectShopsNearMe = selectShopsNearMe;
 exports.selectUserByEmailPw = selectUserByEmailPw;
 exports.insertLikedShopByUser = insertLikedShopByUser;
+exports.insertDislikedShopByUser = insertDislikedShopByUser;
+exports.deleteDislikedShopAddedTwoHourAgo = deleteDislikedShopAddedTwoHourAgo;
