@@ -15,6 +15,11 @@
 	margin-right:5px;
 }
 
+#btn-prefered-shops {
+	cursor: pointer;
+	margin-right:5px;
+}
+
 .section-header {
 	float:right;
 	font-size: 85%;
