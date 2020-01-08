@@ -26,9 +26,9 @@ use `db_shops`;
 -- Table structure for table `user`
 --
 
-CREATE TABLE if not exists `user` (
-  `id` int(11) NOT NULL,
-  `email` varchar(30) NOT NULL,
+CREATE TABLE if not exists `user`(
+  `id` int(11) PRIMARY KEY AUTO_INCREMENT,
+  `email` varchar(30) UNIQUE,
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
