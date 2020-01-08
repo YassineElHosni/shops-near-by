@@ -14,3 +14,10 @@
 	cursor: not-allowed;
 	margin-right:5px;
 }
+
+.section-header {
+	float:right;
+	font-size: 85%;
+	position: relative;
+	top:-10px;
+}
