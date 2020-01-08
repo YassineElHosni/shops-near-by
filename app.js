@@ -10,6 +10,7 @@ var express = require('express')
 	,fs = require('fs')
 	,util = require('util')
 	,mysql = require('mysql')
+	,user = require('./app_modules/user-functionalities')
 	,multerData = multer()
 	,app = express()
 	,connection = mysql.createConnection({
@@ -47,3 +48,12 @@ global.file_log = function (method, message, type = "INFO") { //
 	console.log("[log] " + line);
 	log_file.write(util.format(line) + '\n');
 };
+
+
+app.post('/signup', multerData.fields([]), async(request, response) =>{
+	file_log(
+		"POST: /signup",
+		"was called"
+	);
+	await user.signup(request, response);
+});
