@@ -22,5 +22,16 @@ create database if not exists `db_shops`;
 use `db_shops`;
 
 
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE if not exists `user` (
+  `id` int(11) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
 
 COMMIT;
