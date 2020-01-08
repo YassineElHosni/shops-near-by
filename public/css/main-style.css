@@ -9,3 +9,8 @@
 #sign-up-box {
 	display: none;
 }
+
+#btn-near-by-shops {
+	cursor: not-allowed;
+	margin-right:5px;
+}
