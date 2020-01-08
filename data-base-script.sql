@@ -75,5 +75,20 @@ CREATE TABLE if not exists `liked_shops` (
 
 ALTER TABLE `liked_shops` AUTO_INCREMENT=1000;
 
+--
+-- Table structure for table `disliked_shops`
+--
+
+CREATE TABLE if not exists `disliked_shops` (
+  `id` int(11) PRIMARY KEY AUTO_INCREMENT,
+  `shop_id` int,
+  `user_id` int,
+  `dislike_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT `liked_shops_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`),
+  CONSTRAINT `liked_shops_ibfk_2` FOREIGN KEY (`shop_id`) REFERENCES `shops` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `disliked_shops` AUTO_INCREMENT=1000;
+
 
 COMMIT;
