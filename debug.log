@@ -1,0 +1,6 @@
+2020-01-08 15:57:49 INFO ? POST: /signup : was called
+2020-01-08 16:00:00 INFO ? POST: /signup : was called
+2020-01-08 16:00:47 INFO ? POST: /signup : was called
+2020-01-08 16:01:51 INFO ? POST: /signup : was called
+2020-01-08 16:03:08 INFO ? POST: /signup : was called
+2020-01-08 16:03:08 INFO ? routes.user.insertUser : user account created succesfully
