@@ -99,3 +99,73 @@
 2020-01-08 20:20:59 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 3
 2020-01-08 20:20:59 INFO ? routes.user.selectShopsNearMe : called by user n° 3
 2020-01-08 20:20:59 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 21:37:44 INFO ? POST: /signin : was called
+2020-01-08 21:37:44 INFO ? routes.user.selectUserByEmailPw : user n° 3 succesfully signed in
+2020-01-08 21:37:44 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 3
+2020-01-08 21:37:44 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 21:37:44 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 3
+2020-01-08 21:37:44 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 21:37:44 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 21:37:52 INFO ? POST: /shop/dislike : called by user n° 3
+2020-01-08 21:37:52 INFO ? routes.user.insertDislikedShopByUser : called by user n° 3
+2020-01-08 21:37:52 INFO ? routes.user.insertDislikedShopByUser :  user n° 3 succesfully disliked shop n° 1001
+2020-01-08 21:38:04 INFO ? POST: /shop/dislike : called by user n° 3
+2020-01-08 21:38:04 INFO ? routes.user.insertDislikedShopByUser : called by user n° 3
+2020-01-08 21:38:04 INFO ? routes.user.insertDislikedShopByUser :  user n° 3 succesfully disliked shop n° 1000
+2020-01-08 21:39:19 INFO ? POST: /signin : was called
+2020-01-08 21:39:19 INFO ? routes.user.selectUserByEmailPw : user n° 3 succesfully signed in
+2020-01-08 21:39:19 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 3
+2020-01-08 21:39:19 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 21:39:19 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 3
+2020-01-08 21:39:19 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 21:39:19 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 21:39:24 INFO ? GET: /signout : called by user n° 3
+2020-01-08 21:39:24 INFO ? routes.user.signout : signing out user n° 3
+2020-01-08 21:39:24 INFO ? routes.user.signout : user n° 3 signout succesfully
+2020-01-08 21:39:29 INFO ? POST: /signin : was called
+2020-01-08 21:39:29 INFO ? routes.user.selectUserByEmailPw : user n° 2 succesfully signed in
+2020-01-08 21:39:29 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 2
+2020-01-08 21:39:29 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 21:39:29 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 2
+2020-01-08 21:39:29 INFO ? routes.user.selectShopsNearMe : called by user n° 2
+2020-01-08 21:39:29 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 2
+2020-01-08 21:39:34 INFO ? POST: /shop/dislike : called by user n° 2
+2020-01-08 21:39:34 INFO ? routes.user.insertDislikedShopByUser : called by user n° 2
+2020-01-08 21:39:34 INFO ? routes.user.insertDislikedShopByUser :  user n° 2 succesfully disliked shop n° 1003
+2020-01-08 21:39:36 INFO ? POST: /shop/dislike : called by user n° 2
+2020-01-08 21:39:36 INFO ? routes.user.insertDislikedShopByUser : called by user n° 2
+2020-01-08 21:39:36 INFO ? routes.user.insertDislikedShopByUser :  user n° 2 succesfully disliked shop n° 1001
+2020-01-08 21:39:38 INFO ? POST: /shop/like : called by user n° 2
+2020-01-08 21:39:38 INFO ? routes.user.insertLikedShopByUser : called by user n° 2
+2020-01-08 21:39:38 INFO ? routes.user.insertLikedShopByUser : user n° 2 succesfully liked shop n° 1004
+2020-01-08 21:39:39 INFO ? POST: /shop/like : called by user n° 2
+2020-01-08 21:39:39 INFO ? routes.user.insertLikedShopByUser : called by user n° 2
+2020-01-08 21:39:39 INFO ? routes.user.insertLikedShopByUser : user n° 2 succesfully liked shop n° 1006
+2020-01-08 21:47:52 INFO ? POST: /signin : was called
+2020-01-08 21:47:52 INFO ? routes.user.selectUserByEmailPw : user n° 2 succesfully signed in
+2020-01-08 21:47:52 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 2
+2020-01-08 21:47:52 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 21:47:52 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 2
+2020-01-08 21:47:52 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 21:47:52 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 2
+2020-01-08 21:47:52 INFO ? routes.user.selectShopsNearMe : called by user n° 2
+2020-01-08 21:47:52 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 21:47:52 INFO ? [object Object] : undefined
+2020-01-08 21:47:52 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 2
+2020-01-08 21:48:24 INFO ? POST: /signin : was called
+2020-01-08 21:48:24 INFO ? routes.user.selectUserByEmailPw : user n° 2 succesfully signed in
+2020-01-08 21:48:24 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 2
+2020-01-08 21:48:24 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 21:48:24 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 2
+2020-01-08 21:48:24 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 21:48:24 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 2
+2020-01-08 21:48:24 INFO ? routes.user.selectShopsNearMe : called by user n° 2
+2020-01-08 21:48:24 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 21:48:24 INFO ? [object Object] : undefined
+2020-01-08 21:48:24 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 2
+2020-01-08 21:48:39 INFO ? POST: /shop/dislike : called by user n° 2
+2020-01-08 21:48:39 INFO ? routes.user.insertDislikedShopByUser : called by user n° 2
+2020-01-08 21:48:39 INFO ? routes.user.insertDislikedShopByUser :  user n° 2 succesfully disliked shop n° 1002
+2020-01-08 21:48:41 INFO ? GET: /signout : called by user n° 2
+2020-01-08 21:48:41 INFO ? routes.user.signout : signing out user n° 2
+2020-01-08 21:48:41 INFO ? routes.user.signout : user n° 2 signout succesfully
