@@ -13,6 +13,7 @@ function init() {
 			signup_url: "/signup",
 			signin_url: "/signin",
 			signout_url: "/signout",
+			like_shop_url: "/shop/like",
 			shops: [{
 				"id": 0,
 				"name": "shop0",
@@ -42,6 +43,14 @@ function init() {
 				$("#sign-up-box").hide();
 				$("#sign-in-box").show();
 			},
+            removeShopDisplay(id){
+                for (var i = 0; i < this.shops.length; i++) {
+                    if(this.shops[i].id == id){
+                        this.shops.splice(i, 1);
+                        break;
+                    }
+                }
+            },
 			displayMessage(message, error=false){
 				this.clearInput();
 				if(error){
@@ -104,7 +113,18 @@ function init() {
 					this.displayMessage(response.message, response.error);
 					this.getSignin();
 				});
-			}
+			},
+            likeShop(shop_id){
+                let form_data = new FormData();
+                form_data.append("shop_id", shop_id);
+
+                fetch(this.like_shop_url, {method:"POST", body:form_data}).then(response => {
+                    return response.json();
+                }).then(response => {
+                    this.removeShopDisplay(shop_id);
+                    this.displayMessage(response.message, response.error);
+                });
+            }
 		}
 	});
 };
