@@ -5,3 +5,7 @@
 .error-msg, .success-msg {
 	display: none;
 }
+
+#sign-up-box {
+	display: none;
+}
