@@ -99,7 +99,8 @@
 	<!-- dashbord -->
 	<div id="dashbord-box"  class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
 		<div class="section-header">
-			<a id="btn-near-by-shops" href="#"><b>Near by Shops</b></a>
+			<a id="btn-near-by-shops" v-on:click.prevent="nearByShops()"><b>Near by Shops</b></a>
+			<a id="btn-prefered-shops" v-on:click.prevent="preferedShops()"><b>Prefered Shops</b></a>
 			<a id="btn-signout" v-on:click.prevent="signout()"><b>Sign Out</b></a>
 		</div>
 		<div class="h1 text-warning">{{dashbord}}</div>
@@ -115,16 +116,18 @@
 						<!-- <p>({{ shop.id }})</p> -->
 						<p>{{ parseInt(shop.distance) }} metres</p>
 						<p>
-							<input type="button"
-								class="btn btn-success" 
-								name="btn-like-shop"
-								v-on:click.prevent="likeShop(shop.id)"
-								value="like">
-							<input type="button"
-								class="btn btn-danger"
-								name="btn-like-shop"
-								v-on:click.prevent="dislikeShop(shop.id)"
-								value="dislike">
+							<div v-if="is_near_by_shop">
+								<input type="button"
+									class="btn btn-success" 
+									name="btn-like-shop"
+									v-on:click.prevent="likeShop(shop.id)"
+									value="like">
+								<input type="button"
+									class="btn btn-danger"
+									name="btn-like-shop"
+									v-on:click.prevent="dislikeShop(shop.id)"
+									value="dislike">
+							</div>
 						</p>
 					</div>
 				</div>
