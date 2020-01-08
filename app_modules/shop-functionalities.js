@@ -11,4 +11,13 @@ function likeShop(request, response){
 		response
 	);
 };
+function dislikeShop(request, response){
+
+   db_request.insertDislikedShopByUser(
+      parseInt(request.body.shop_id),
+      request.session.user.id,
+      response
+   );
+};
 exports.likeShop = likeShop;
+exports.dislikeShop = dislikeShop;
