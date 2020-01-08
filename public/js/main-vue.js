@@ -9,8 +9,15 @@ function init() {
 			password:"",
 			new_email:"",
 			new_password:"",
+			dashbord: "Welcome",
 			signup_url: "/signup",
-			signin_url: "/signin"
+			signin_url: "/signin",
+			signout_url: "/signout",
+			shops: [{
+				"id": 0,
+				"name": "shop0",
+				"distance": 0
+			}]
 		},
 		methods: {
 			clearInput(){
@@ -24,12 +31,14 @@ function init() {
 				$(".success-msg").hide();
 				$(".error-msg").hide();
 
+				$("#dashbord-box").hide();
 				$("#sign-in-box").hide();
 				$("#sign-up-box").show();
 			},
 			getSignin(){
 				this.clearInput();
 
+				$("#dashbord-box").hide();
 				$("#sign-up-box").hide();
 				$("#sign-in-box").show();
 			},
@@ -44,6 +53,15 @@ function init() {
 					$(".success-msg").html(message);
 					$(".error-msg").hide();
 				}
+			},
+			displayDashbord(data){
+				this.clearInput();
+
+				$("#sign-in-box").hide();
+				$("#sign-up-box").hide();
+
+				$("#dashbord-box").show();
+				$("#dashbord-box .subtitle").html(data.user.email);
 			},
 			signup(){
 				console.log("signing up as "+this.new_email+" "+this.new_password);
@@ -74,9 +92,17 @@ function init() {
 						this.displayMessage(response.message, true);
 					}else{
 						this.displayMessage(response.message);
-
-						// TODO : display dashbord
+						this.displayDashbord(response.data);
+						this.shops = response.data.shops;
 					}
+				});
+			},
+			signout(){
+				fetch(this.signout_url, {method:"GET"}).then(response => {
+					return response.json();
+				}).then(response => {
+					this.displayMessage(response.message, response.error);
+					this.getSignin();
 				});
 			}
 		}
