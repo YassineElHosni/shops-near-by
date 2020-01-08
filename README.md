@@ -32,7 +32,7 @@ cd shops-near-by
 npm install
 ```
 
-Importe the following SQL code
+Create a new database with the name 'db_shops' & Importe the following SQL code
 
 ```bash
 https://github.com/YassineElHosni/shops-near-by/blob/master/data-base-script.sql
