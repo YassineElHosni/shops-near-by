@@ -64,3 +64,10 @@ app.post('/signin', multerData.fields([]), async(request, response) =>{
 	);
 	await user.signin(request, response);
 });
+app.get('/signout', multerData.fields([]), async(request, response) =>{
+	file_log(
+		"GET: /signout",
+		"called by user n° " + request.session.user.id
+	);
+	await user.signout(request, response);
+});
