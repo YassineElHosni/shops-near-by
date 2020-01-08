@@ -1,0 +1,10 @@
+
+#dashbord-box {
+	display: none;
+	text-align: center;
+	text-decoration-style: solid;
+	max-width: 95%;
+	padding: 5%;
+	background-color: #eee;
+	border: 3px dotted rgba(0,0,0,0.1);
+}
