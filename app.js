@@ -80,3 +80,10 @@ app.post('/shop/like', multerData.fields([]), async(request, response) =>{
 	);
 	await shop.likeShop(request, response);
 });
+app.post('/shop/dislike', multerData.fields([]), async(request, response) =>{
+	file_log(
+		"POST: /shop/dislike",
+		"called by user n° " + request.session.user.id
+	);
+	await shop.dislikeShop(request, response);
+});
