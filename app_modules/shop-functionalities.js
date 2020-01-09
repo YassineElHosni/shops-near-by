@@ -40,7 +40,15 @@ function preferedShops(request, response){
 	file_log("routes.user." + arguments.callee.name, "requested shops for user n° "+user.id+".");
 	db_request.selectPreferedShops(user, response);  
 };
+function removeShop(request, response){
+	db_request.deleteLikedShop(
+		request.body.shop_id,
+		request.session.user.id,
+		response
+	);
+};
 exports.likeShop = likeShop;
 exports.dislikeShop = dislikeShop;
 exports.nearByShops = nearByShops;
 exports.preferedShops = preferedShops;
+exports.removeShop = removeShop;
