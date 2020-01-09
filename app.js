@@ -101,3 +101,10 @@ app.get('/shops/prefered', async(request, response) =>{
 	);
 	await shop.preferedShops(request, response);
 });
+app.delete('/shop/remove', multerData.fields([]), async(request, response) =>{
+	file_log(
+		"DELETE: /shop/remove",
+		"called by user n° " + request.session.user.id
+	);
+	await shop.removeShop(request, response);
+});
