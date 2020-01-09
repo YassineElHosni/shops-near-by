@@ -1,4 +1,5 @@
 ### The near by shops repository
+![CircleCI](https://github.com/YassineElHosni/shops-near-by/blob/master/shop-near-by-challenge-completed.svg)<br/>
 A full stack javascript project to lists shops nearby a given user.
 
 # Description
