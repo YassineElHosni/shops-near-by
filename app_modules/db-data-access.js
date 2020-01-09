@@ -177,6 +177,23 @@ function selectPreferedShops(user, response){
 		}));
 	});
 }
+function deleteLikedShop(shop_id, user_id, response){
+	var callee_name = arguments.callee.name;
+	file_log("routes.user." + callee_name, "called by user n° " + user_id);
+	db.query(queries.get.SQL_DELETE_LIKED_SHOP,
+		[
+			shop_id,
+			user_id
+		],
+		function(error, result) {
+			if(error) throw error;
+			file_log("routes.user." + callee_name, "shop n° " + shop_id + " succesfully removed from user n° " + user_id + " liked-shops list");
+			response.send(JSON.stringify({
+				error: false,
+				message: "Succesfully removed shop from liked-shops!"
+			}));
+		});
+}
 exports.insertUser = insertUser;
 exports.requestCurrentLocationFromUser = requestCurrentLocationFromUser;
 exports.selectShopsNearMe = selectShopsNearMe;
@@ -185,3 +202,4 @@ exports.insertLikedShopByUser = insertLikedShopByUser;
 exports.insertDislikedShopByUser = insertDislikedShopByUser;
 exports.deleteDislikedShopAddedTwoHourAgo = deleteDislikedShopAddedTwoHourAgo;
 exports.selectPreferedShops = selectPreferedShops;
+exports.deleteLikedShop = deleteLikedShop;
