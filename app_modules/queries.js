@@ -30,5 +30,6 @@ exports.get = {
 								+"POW(69.1 * (? - longitude) * COS(latitude / 57.3), 2)) * 1609.34 AS distance "
 							+"FROM `" + db_shops.tables.shops + "` "
 							+"WHERE id in "
-								+"(SELECT `shop_id` FROM `" + db_shops.tables.shops_liked + "` WHERE `user_id` = ?);"
+								+"(SELECT `shop_id` FROM `" + db_shops.tables.shops_liked + "` WHERE `user_id` = ?);",
+	SQL_DELETE_LIKED_SHOP: "DELETE FROM `" + db_shops.tables.shops_liked + "` WHERE shop_id = ? and user_id = ?;"
 };
