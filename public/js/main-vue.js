@@ -18,6 +18,7 @@ function init() {
 			dislike_shop_url: "/shop/dislike",
 			near_by_shops_url: "/shops/nearby",
 			prefered_shops_url: "/shops/prefered",
+			remove_shop_url: "/shop/remove",
 			shops: [{
 				"id": 0,
 				"name": "shop0",
@@ -170,6 +171,17 @@ function init() {
 						}
 					});
 				}
+			},
+			removeShop(shop_id){
+				let form_data = new FormData();
+				form_data.append("shop_id", shop_id);
+
+				fetch(this.remove_shop_url, {method:"DELETE", body:form_data}).then(response => {
+					return response.json();
+				}).then(response => {
+					this.removeShopDisplay(shop_id);
+					this.displayMessage(response.message, response.error);
+				});
 			}
 		}
 	});
