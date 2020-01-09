@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<linearGradient id="b" x2="0" y2="100%">
+		<stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+		<stop offset="1" stop-opacity=".1"/>
+	</linearGradient>
+	<clipPath id="a">
+		<rect width="110" height="25"rx="3" ry="3" fill="#fff"/>
+	</clipPath>
+	<g clip-path="url(#a)">
+		<path fill="#555" d="M0 0h100v25H0z"/>
+		<path fill="#53A3FF" d="M55 0h60v25H55z"/>
+		<path fill="url(#b)" d="M0 0h110v25H0z"/>
+	</g>
+	<g fill="#fff" text-anchor="middle"  font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110">
+		<text x="280" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="450">
+			challenge
+		</text>
+		<text x="280" y="150" transform="scale(.1)" textLength="450">
+			challenge
+		</text>
+		<text x="830" y="145" transform="scale(.1)" textLength="460">
+			completed
+		</text>
+	</g>
+</svg>
