@@ -368,3 +368,223 @@
 2020-01-08 22:51:56 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
 2020-01-08 22:51:56 INFO ? [object Object] : undefined
 2020-01-08 22:51:56 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 23:30:12 INFO ? POST: /signin : was called
+2020-01-08 23:30:12 INFO ? routes.user.selectUserByEmailPw : user n° 3 succesfully signed in
+2020-01-08 23:30:12 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 3
+2020-01-08 23:30:12 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:30:12 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 3
+2020-01-08 23:30:12 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:30:12 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 3
+2020-01-08 23:30:12 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 23:30:12 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:30:12 INFO ? [object Object] : undefined
+2020-01-08 23:30:12 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 23:30:16 INFO ? GET: /shop/prefered : called by user n° 3
+2020-01-08 23:30:16 INFO ? routes.user.preferedShops : requeting user position
+2020-01-08 23:30:16 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° undefined
+2020-01-08 23:30:16 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:30:16 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 3
+2020-01-08 23:30:16 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:30:16 INFO ? routes.user.preferedShops : requested shops for user n° 3.
+2020-01-08 23:30:16 INFO ? routes.user.selectPreferedShops : called by user n° 3
+2020-01-08 23:30:16 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:30:16 INFO ? [object Object] : undefined
+2020-01-08 23:30:16 INFO ? routes.user.selectPreferedShops : succesfully loaded prefered shops for user n° 3
+2020-01-08 23:53:38 INFO ? POST: /signin : was called
+2020-01-08 23:53:38 INFO ? routes.user.selectUserByEmailPw : user n° 3 succesfully signed in
+2020-01-08 23:53:38 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 3
+2020-01-08 23:53:38 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:53:38 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 3
+2020-01-08 23:53:38 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:53:38 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 3
+2020-01-08 23:53:38 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 23:53:38 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:53:38 INFO ? [object Object] : undefined
+2020-01-08 23:53:38 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 23:53:40 INFO ? GET: /shop/prefered : called by user n° 3
+2020-01-08 23:53:40 INFO ? routes.user.preferedShops : requeting user position
+2020-01-08 23:53:40 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° undefined
+2020-01-08 23:53:40 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:53:40 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 3
+2020-01-08 23:53:40 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:53:40 INFO ? routes.user.preferedShops : requested shops for user n° 3.
+2020-01-08 23:53:40 INFO ? routes.user.selectPreferedShops : called by user n° 3
+2020-01-08 23:53:40 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:53:40 INFO ? [object Object] : undefined
+2020-01-08 23:53:40 INFO ? routes.user.selectPreferedShops : succesfully loaded prefered shops for user n° 3
+2020-01-08 23:53:42 INFO ? DELETE: /shop/remove : called by user n° 3
+2020-01-08 23:53:42 INFO ? routes.user.deleteLikedShop : called by user n° 3
+2020-01-08 23:53:42 INFO ? routes.user.deleteLikedShop : shop n° 1004 succesfully removed from user n° 3 liked-shops list
+2020-01-08 23:53:43 INFO ? GET: /shops/nearby : called by user n° 3
+2020-01-08 23:53:43 INFO ? routes.user.nearByShops : requeting user position
+2020-01-08 23:53:43 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° undefined
+2020-01-08 23:53:43 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:53:43 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 3
+2020-01-08 23:53:43 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:53:43 INFO ? routes.user.nearByShops : requesting near by shops
+2020-01-08 23:53:43 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 23:53:43 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:53:43 INFO ? [object Object] : undefined
+2020-01-08 23:53:43 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 23:53:45 INFO ? GET: /shop/prefered : called by user n° 3
+2020-01-08 23:53:45 INFO ? routes.user.preferedShops : requeting user position
+2020-01-08 23:53:45 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° undefined
+2020-01-08 23:53:45 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:53:45 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 3
+2020-01-08 23:53:45 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:53:45 INFO ? routes.user.preferedShops : requested shops for user n° 3.
+2020-01-08 23:53:45 INFO ? routes.user.selectPreferedShops : called by user n° 3
+2020-01-08 23:53:45 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:53:45 INFO ? [object Object] : undefined
+2020-01-08 23:53:45 INFO ? routes.user.selectPreferedShops : succesfully loaded prefered shops for user n° 3
+2020-01-08 23:53:46 INFO ? DELETE: /shop/remove : called by user n° 3
+2020-01-08 23:53:46 INFO ? routes.user.deleteLikedShop : called by user n° 3
+2020-01-08 23:53:46 INFO ? routes.user.deleteLikedShop : shop n° 1005 succesfully removed from user n° 3 liked-shops list
+2020-01-08 23:53:47 INFO ? GET: /shops/nearby : called by user n° 3
+2020-01-08 23:53:47 INFO ? routes.user.nearByShops : requeting user position
+2020-01-08 23:53:47 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° undefined
+2020-01-08 23:53:47 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:53:47 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 3
+2020-01-08 23:53:47 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:53:47 INFO ? routes.user.nearByShops : requesting near by shops
+2020-01-08 23:53:47 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 23:53:47 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:53:47 INFO ? [object Object] : undefined
+2020-01-08 23:53:47 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 23:53:49 INFO ? POST: /shop/like : called by user n° 3
+2020-01-08 23:53:49 INFO ? routes.user.insertLikedShopByUser : called by user n° 3
+2020-01-08 23:53:49 INFO ? routes.user.insertLikedShopByUser : user n° 3 succesfully liked shop n° 1005
+2020-01-08 23:53:51 INFO ? GET: /shop/prefered : called by user n° 3
+2020-01-08 23:53:51 INFO ? routes.user.preferedShops : requeting user position
+2020-01-08 23:53:51 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° undefined
+2020-01-08 23:53:51 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:53:51 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 3
+2020-01-08 23:53:51 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:53:51 INFO ? routes.user.preferedShops : requested shops for user n° 3.
+2020-01-08 23:53:51 INFO ? routes.user.selectPreferedShops : called by user n° 3
+2020-01-08 23:53:51 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:53:51 INFO ? [object Object] : undefined
+2020-01-08 23:53:51 INFO ? routes.user.selectPreferedShops : succesfully loaded prefered shops for user n° 3
+2020-01-08 23:53:52 INFO ? DELETE: /shop/remove : called by user n° 3
+2020-01-08 23:53:52 INFO ? routes.user.deleteLikedShop : called by user n° 3
+2020-01-08 23:53:52 INFO ? routes.user.deleteLikedShop : shop n° 1005 succesfully removed from user n° 3 liked-shops list
+2020-01-08 23:53:54 INFO ? GET: /shops/nearby : called by user n° 3
+2020-01-08 23:53:54 INFO ? routes.user.nearByShops : requeting user position
+2020-01-08 23:53:54 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° undefined
+2020-01-08 23:53:54 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:53:54 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 3
+2020-01-08 23:53:54 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:53:54 INFO ? routes.user.nearByShops : requesting near by shops
+2020-01-08 23:53:54 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 23:53:54 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:53:54 INFO ? [object Object] : undefined
+2020-01-08 23:53:54 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 23:53:55 INFO ? POST: /shop/dislike : called by user n° 3
+2020-01-08 23:53:55 INFO ? routes.user.insertDislikedShopByUser : called by user n° 3
+2020-01-08 23:53:55 INFO ? routes.user.insertDislikedShopByUser :  user n° 3 succesfully disliked shop n° 1001
+2020-01-08 23:53:57 INFO ? GET: /signout : called by user n° 3
+2020-01-08 23:53:57 INFO ? routes.user.signout : signing out user n° 3
+2020-01-08 23:53:57 INFO ? routes.user.signout : user n° 3 signout succesfully
+2020-01-08 23:54:01 INFO ? POST: /signin : was called
+2020-01-08 23:54:01 INFO ? routes.user.selectUserByEmailPw : user n° 1 succesfully signed in
+2020-01-08 23:54:01 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 1
+2020-01-08 23:54:01 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:54:01 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 1
+2020-01-08 23:54:01 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:54:01 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 1
+2020-01-08 23:54:01 INFO ? routes.user.selectShopsNearMe : called by user n° 1
+2020-01-08 23:54:01 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:54:01 INFO ? [object Object] : undefined
+2020-01-08 23:54:01 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 1
+2020-01-08 23:54:03 INFO ? GET: /shop/prefered : called by user n° 1
+2020-01-08 23:54:03 INFO ? routes.user.preferedShops : requeting user position
+2020-01-08 23:54:03 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° undefined
+2020-01-08 23:54:03 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:54:03 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 1
+2020-01-08 23:54:03 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:54:03 INFO ? routes.user.preferedShops : requested shops for user n° 1.
+2020-01-08 23:54:03 INFO ? routes.user.selectPreferedShops : called by user n° 1
+2020-01-08 23:54:03 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:54:03 INFO ? [object Object] : undefined
+2020-01-08 23:54:03 INFO ? routes.user.selectPreferedShops : succesfully loaded prefered shops for user n° 1
+2020-01-08 23:54:05 INFO ? GET: /shops/nearby : called by user n° 1
+2020-01-08 23:54:05 INFO ? routes.user.nearByShops : requeting user position
+2020-01-08 23:54:05 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° undefined
+2020-01-08 23:54:05 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:54:05 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 1
+2020-01-08 23:54:05 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:54:05 INFO ? routes.user.nearByShops : requesting near by shops
+2020-01-08 23:54:05 INFO ? routes.user.selectShopsNearMe : called by user n° 1
+2020-01-08 23:54:05 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:54:05 INFO ? [object Object] : undefined
+2020-01-08 23:54:05 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 1
+2020-01-08 23:54:06 INFO ? GET: /signout : called by user n° 1
+2020-01-08 23:54:06 INFO ? routes.user.signout : signing out user n° 1
+2020-01-08 23:54:06 INFO ? routes.user.signout : user n° 1 signout succesfully
+2020-01-08 23:54:10 INFO ? POST: /signin : was called
+2020-01-08 23:54:10 INFO ? routes.user.selectUserByEmailPw : user n° 2 succesfully signed in
+2020-01-08 23:54:10 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 2
+2020-01-08 23:54:10 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:54:10 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 2
+2020-01-08 23:54:10 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:54:10 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 2
+2020-01-08 23:54:10 INFO ? routes.user.selectShopsNearMe : called by user n° 2
+2020-01-08 23:54:10 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:54:10 INFO ? [object Object] : undefined
+2020-01-08 23:54:10 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 2
+2020-01-08 23:54:11 INFO ? GET: /shop/prefered : called by user n° 2
+2020-01-08 23:54:11 INFO ? routes.user.preferedShops : requeting user position
+2020-01-08 23:54:11 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° undefined
+2020-01-08 23:54:11 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:54:11 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 2
+2020-01-08 23:54:11 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:54:11 INFO ? routes.user.preferedShops : requested shops for user n° 2.
+2020-01-08 23:54:11 INFO ? routes.user.selectPreferedShops : called by user n° 2
+2020-01-08 23:54:11 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:54:11 INFO ? [object Object] : undefined
+2020-01-08 23:54:11 INFO ? routes.user.selectPreferedShops : succesfully loaded prefered shops for user n° 2
+2020-01-08 23:54:12 INFO ? GET: /signout : called by user n° 2
+2020-01-08 23:54:12 INFO ? routes.user.signout : signing out user n° 2
+2020-01-08 23:54:12 INFO ? routes.user.signout : user n° 2 signout succesfully
+2020-01-08 23:54:16 INFO ? POST: /signin : was called
+2020-01-08 23:54:16 INFO ? routes.user.selectUserByEmailPw : user n° 3 succesfully signed in
+2020-01-08 23:54:16 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° 3
+2020-01-08 23:54:16 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:54:16 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 3
+2020-01-08 23:54:16 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:54:16 INFO ? routes.user.selectUserByEmailPw : requesting shops near user n° 3
+2020-01-08 23:54:16 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 23:54:16 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:54:16 INFO ? [object Object] : undefined
+2020-01-08 23:54:16 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 23:54:17 INFO ? GET: /shop/prefered : called by user n° 3
+2020-01-08 23:54:17 INFO ? routes.user.preferedShops : requeting user position
+2020-01-08 23:54:17 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° undefined
+2020-01-08 23:54:17 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:54:17 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 3
+2020-01-08 23:54:17 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:54:17 INFO ? routes.user.preferedShops : requested shops for user n° 3.
+2020-01-08 23:54:17 INFO ? routes.user.selectPreferedShops : called by user n° 3
+2020-01-08 23:54:17 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:54:17 INFO ? [object Object] : undefined
+2020-01-08 23:54:17 INFO ? routes.user.selectPreferedShops : succesfully loaded prefered shops for user n° 3
+2020-01-08 23:54:20 INFO ? DELETE: /shop/remove : called by user n° 3
+2020-01-08 23:54:20 INFO ? routes.user.deleteLikedShop : called by user n° 3
+2020-01-08 23:54:20 INFO ? routes.user.deleteLikedShop : shop n° 1003 succesfully removed from user n° 3 liked-shops list
+2020-01-08 23:54:21 INFO ? GET: /shops/nearby : called by user n° 3
+2020-01-08 23:54:21 INFO ? routes.user.nearByShops : requeting user position
+2020-01-08 23:54:21 INFO ? routes.user.requestCurrentLocationFromUser : requeting current location from user n° undefined
+2020-01-08 23:54:21 INFO ? routes.user.requestCurrentLocationFromUser : user position: latitude=34.003243399999995, longitude=-6.8487546
+2020-01-08 23:54:21 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : called by user 3
+2020-01-08 23:54:21 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : reseting disliked shops if inserted before 2hour from now
+2020-01-08 23:54:21 INFO ? routes.user.nearByShops : requesting near by shops
+2020-01-08 23:54:21 INFO ? routes.user.selectShopsNearMe : called by user n° 3
+2020-01-08 23:54:21 INFO ? routes.user.deleteDislikedShopAddedTwoHourAgo : succesfully removed some disliked shops
+2020-01-08 23:54:21 INFO ? [object Object] : undefined
+2020-01-08 23:54:21 INFO ? routes.user.selectShopsNearMe : succesfully loaded near by shops for user n° 3
+2020-01-08 23:54:22 INFO ? POST: /shop/like : called by user n° 3
+2020-01-08 23:54:22 INFO ? routes.user.insertLikedShopByUser : called by user n° 3
+2020-01-08 23:54:23 INFO ? routes.user.insertLikedShopByUser : user n° 3 succesfully liked shop n° 1004
+2020-01-08 23:55:53 INFO ? GET: /signout : called by user n° 3
+2020-01-08 23:55:53 INFO ? routes.user.signout : signing out user n° 3
+2020-01-08 23:55:53 INFO ? routes.user.signout : user n° 3 signout succesfully
