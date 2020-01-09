@@ -128,6 +128,13 @@
 									v-on:click.prevent="dislikeShop(shop.id)"
 									value="dislike">
 							</div>
+							<div v-if="!is_near_by_shop">
+								<input type="button"
+									class="btn btn-danger"
+									name="btn-remove-shop"
+									v-on:click.prevent="removeShop(shop.id)"
+									value="remove">
+							</div>
 						</p>
 					</div>
 				</div>
