@@ -1,5 +1,5 @@
 ### The near by shops repository
-![CircleCI](https://github.com/YassineElHosni/shops-near-by/blob/master/shop-near-by-challenge-completed.svg)<br/>
+![Challeng_completed](https://github.com/YassineElHosni/shops-near-by/blob/master/shop-near-by-challenge-completed.svg)<br/>
 A full stack javascript project to lists shops nearby a given user.
 
 # Description
@@ -51,8 +51,8 @@ Open [http://localhost:9096](http://localhost:9096) and take a look around.
 * As a User, I can sign up using my email & password
 * As a User, I can sign in using my email & password
 * As a User, I can display the list of shops sorted by distance
-* As a User, I can like a shop, so it can be added to my preferred shops
-* Acceptance criteria: liked shops shouldn’t be displayed on the main page
+* As a User, I can like a shop, so it can be added to my preferred shops (
+ Acceptance criteria: liked shops shouldn’t be displayed on the main page)
 
 Bonus point (those items are optional):
 * [BONUS] As a User, I can dislike a shop, so it won’t be displayed within “Nearby Shops” list during the next 2 hours
@@ -61,3 +61,7 @@ Bonus point (those items are optional):
 * [BONUS] As a User, I can remove a shop from my preferred shops list
 
 ## ~List of yet to be implemented functionalites~
+
+## Documentation
+The following link is the documentation docx file:
+[Documentation - shop-near-by - 20200118](https://drive.google.com/open?id=19qBtTz8ypdUFgNqsK8XFGmGZylTZzS0c)
