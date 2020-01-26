@@ -84,8 +84,8 @@ CREATE TABLE if not exists `disliked_shops` (
   `shop_id` int,
   `user_id` int,
   `dislike_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  CONSTRAINT `liked_shops_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`),
-  CONSTRAINT `liked_shops_ibfk_2` FOREIGN KEY (`shop_id`) REFERENCES `shops` (`id`)
+  CONSTRAINT `disliked_shops_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`),
+  CONSTRAINT `disliked_shops_ibfk_2` FOREIGN KEY (`shop_id`) REFERENCES `shops` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 ALTER TABLE `disliked_shops` AUTO_INCREMENT=1000;
